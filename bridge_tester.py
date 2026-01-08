@@ -24,9 +24,9 @@ if not IS_GITHUB:
     for source in BRIDGE_SOURCES:
         source['output_file'] = os.path.join(r"C:\PyCharm\All\tor", source['output_file'])
 
-MAX_WORKERS = 100
+MAX_WORKERS = 50
 CONNECTION_TIMEOUT = 10
-MAX_RETRIES = 2
+MAX_RETRIES = 3
 file_lock = Lock()
 final_stats = []
 
